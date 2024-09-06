@@ -1,0 +1,58 @@
+/* Reset de margin padrão do body */
+body {
+  color: white;          /* Cor do texto */
+  background: #4501ae;    /* Cor de fundo */
+  margin: 0px;           /* Remove a margem padrão */
+}
+
+/* Estilização do cabeçalho */
+header {
+  border-bottom: solid 2px rgb(42, 122, 228); /* Borda inferior azul */
+  padding: 20px;                       /* Espaçamento interno de 20px ao redor do conteúdo */
+  font-size: 32px;                    /* Tamanho da fonte */
+  color: rgb(42, 122, 228);           /* Cor do texto do cabeçalho */
+  background-color: black;           /* Cor de fundo preta para o cabeçalho */
+}
+
+/* Estilização da chamada */
+.chamada {
+  padding: 20px;
+  color: white;
+}
+
+/* Estilização da chamada-texto */
+.chamada-texto {
+  margin-bottom: 20px; /* Espaçamento inferior entre o texto e o vídeo */
+}
+
+/* Estilização do iframe do vídeo */
+.video iframe {
+  display: block;
+  max-width: 100%; /* Ajusta o tamanho máximo para a largura do contêiner */
+}
+
+/* Estilização das miniaturas de vídeos */
+.videos {
+  padding: 20px;
+}
+
+/* Contêiner para as miniaturas com rolagem horizontal */
+.categoria-videos {
+  display: flex;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  gap: 20px; /* Espaçamento maior entre as miniaturas */
+  padding: 10px 0; /* Espaçamento interno superior e inferior */
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Estilização dos links das miniaturas */
+.categoria-videos a {
+  display: block;
+}
+
+/* Tamanho das miniaturas dos vídeos */
+.categoria-videos img {
+  width: 200px; /* Define a largura das miniaturas */
+  height: 112px; /* Define a altura das miniaturas para manter a proporção 16:9 */
+  object-fit: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
+}
